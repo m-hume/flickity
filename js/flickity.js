@@ -777,6 +777,7 @@ proto.childUIPointerDown = function( event ) {
 proto.onresize = function() {
   this.watchCSS();
   this.resize();
+  this.dispatchEvent('resized');
 };
 
 utils.debounceMethod( Flickity, 'onresize', 150 );
